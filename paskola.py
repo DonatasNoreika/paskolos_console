@@ -28,7 +28,7 @@ class Paskola:
         print("{:<8} {:<8} {:<12} {:<12} {:<8}".format("Mėnuo", "Dalis", "Likutis",
                                                      "Palūkanos", "Suma"))
         for menuo in range(1, self.terminas+1):
-            menesio_palukanos = (likutis * self.palukanos) / grazintina_dalis / 12
+            menesio_palukanos = (likutis * self.palukanos) / 100 / 12
             likutis -= grazintina_dalis
             moketina_suma = grazintina_dalis + menesio_palukanos
             print("{:<8} {:<8} {:<12} {:<12} {:<8}".format(round(menuo, 2), round(grazintina_dalis, 2), round(likutis, 2), round(menesio_palukanos, 2), round(moketina_suma, 2)))
