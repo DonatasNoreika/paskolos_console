@@ -1,9 +1,9 @@
 
 class Paskola:
-    def __init__(self, suma, terminas, palukanos):
-        self.suma = suma
-        self.terminas = terminas
-        self.palukanos = palukanos
+    def __init__(self):
+        self.suma = 0
+        self.terminas = 0
+        self.palukanos = 0
         self._bendros_palukanos = 0
         self._bendra_suma = 0
 
